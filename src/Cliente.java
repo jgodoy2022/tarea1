@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Cliente {
+public class Cliente {
+    private String nombre;
+    private String rut;
 }

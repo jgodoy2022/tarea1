@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Boleta {
+public class Boleta extends DocTributario {
+
 }
