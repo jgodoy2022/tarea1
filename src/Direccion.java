@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class Direccion {
+public class Direccion {
+    private String direccion;
 }
