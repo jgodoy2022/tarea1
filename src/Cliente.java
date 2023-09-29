@@ -1,10 +1,7 @@
 public class Cliente {
     private String nombre;
     private String rut;
-    private String direccion;
-    public Cliente(Direccion villa){
-        this.direccion = villa.getDireccion();
-    }
+    private Direccion direccion;
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
@@ -17,8 +14,12 @@ public class Cliente {
     public String getRut(){
         return rut;
     }
+    public String obtenerDireccion(){
+       return direccion.getDireccion();
+    }
     @Override
     public String toString() {
+
         return null;
     }
 }
