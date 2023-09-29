@@ -1,24 +1,20 @@
 public class DetalleOrden {
     private int cantidad;
-    private float peso;
-    private float precio;
-    private String nombre;
-    private String descripcion;
+    private Articulo articulo;
     public DetalleOrden(Articulo articulo, int n) {
         this.cantidad=n;
-        this.peso= articulo.getPeso();
-        this.precio= articulo.getPrecio();
+        this.articulo=articulo;
     }
     public float calcPrecio(){
-        return calcIVA()*cantidad;
+        return calcIVA()+calcPrecioSinIVA();
     }
     public float calcPrecioSinIVA(){
-        return cantidad*this.precio;
+        return cantidad*articulo.getPrecio();
     }
     public float calcIVA(){
-        return this.precio*(19/100);
+        return calcPrecioSinIVA()*(19/100);
     }
     public float calcPeso(){
-        return cantidad*this.peso;
+        return cantidad* articulo.getPeso();
     }
 }

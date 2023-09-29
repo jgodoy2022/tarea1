@@ -4,7 +4,8 @@ class Pago {
     private float monto;
     private Date fecha;
 
-    public Pago(){
-
+    public Pago(OrdenCompra compra){
+        this.monto=compra.calcPrecio();
     }
+
 }
