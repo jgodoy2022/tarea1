@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="45c9e19e-d67e-45cd-a377-7b8e0a223915" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -11,6 +12,17 @@
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factura.java" afterDir="false" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="45c9e19e-d67e-45cd-a377-7b8e0a223915" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Tarjeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="45c9e19e-d67e-45cd-a377-7b8e0a223915" name="Changes" comment="" />
+>>>>>>> 4f0d394a73a0c168265f9fa015a28980c034879c
+>>>>>>> aa38df575b0b402d53c3baf1c46619ef22047f95
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
