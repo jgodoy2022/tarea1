@@ -6,6 +6,7 @@ class DocTributario {
     private Date fecha;
 
     public DocTributario(){
+
     }
 }
 
