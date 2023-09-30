@@ -35,4 +35,9 @@ public class Articulo {
     public float getPrecio(){
         return this.precio;
     }
+
+    @Override
+    public String toString() {
+        return "Articulo [peso: "+peso+", nombre: "+nombre+", descripción: "+descripcion+", precio: $"+precio+"]";
+    }
 }

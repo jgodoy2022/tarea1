@@ -1,9 +1,10 @@
 import java.util.Date;
 
 public class OrdenCompra{
-    private Date fecha;
+    private final Date fecha;
     private String estado;
     private DetalleOrden orden;
+    private DocTributario doc;
 
     public OrdenCompra(DetalleOrden orden,String estado,Date fecha){
         this.fecha=fecha;
@@ -21,5 +22,10 @@ public class OrdenCompra{
     }
     public float calcPeso(){
         return orden.calcPeso();
+    }
+
+    @Override
+    public String toString() {
+        return null;
     }
 }

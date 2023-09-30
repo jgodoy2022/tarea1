@@ -21,6 +21,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente [nombre: "+nombre+", rut: "+rut+", dirección: "+obtenerDireccion()+"]";
+        return "Cliente: [nombre: "+nombre+", rut: "+rut+", dirección: "+obtenerDireccion()+"]";
     }
 }

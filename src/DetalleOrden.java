@@ -17,4 +17,10 @@ public class DetalleOrden {
     public float calcPeso(){
         return cantidad* articulo.getPeso();
     }
+
+    @Override
+    public String toString() {
+        return "DetalleOrden: [Cantidad de artículos: "+cantidad+", peso total: "+calcPeso()+", precio sin IVA: "
+                +calcPrecioSinIVA()+",precio con IVA: "+calcIVA()+"y el precio total: "+calcPrecio()+"]";
+    }
 }
