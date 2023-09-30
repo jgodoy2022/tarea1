@@ -1,4 +1,4 @@
-public class Direccion {
+public class Direccion{
     private String direccion;
 
     public void setDireccion(String direccion) {
