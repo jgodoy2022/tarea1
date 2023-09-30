@@ -3,19 +3,23 @@ import java.util.Date;
 public class OrdenCompra{
     private Date fecha;
     private String estado;
-    public OrdenCompra(){
+    private DetalleOrden orden;
 
+    public OrdenCompra(DetalleOrden orden,String estado,Date fecha){
+        this.fecha=fecha;
+        this.estado=estado;
+        this.orden=orden;
     }
     public float PrecioSinIVA(){
-        return 0;
+        return orden.calcPrecioSinIVA();
     }
     public float calcIVA(){
-        return 0;
+        return orden.calcIVA();
     }
     public float calcPrecio(){
-        return 0;
+        return orden.calcPrecio();
     }
     public float calcPeso(){
-        return 0;
+        return orden.calcPeso();
     }
 }
