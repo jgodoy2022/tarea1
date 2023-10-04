@@ -7,6 +7,8 @@ public class OrdenCompra{
     private DetalleOrden orden;
     private ArrayList<DetalleOrden> m;
     private DocTributario doc;
+    private Cliente cliente1;
+    private Direccion direccion1;
 
     public OrdenCompra(DetalleOrden orden,String estado,Date fecha){
         m=new ArrayList<>();
@@ -28,6 +30,9 @@ public class OrdenCompra{
     }
     public float calcPeso(){
         return orden.calcPeso();
+    }
+    public String getNombre(){
+        return 
     }
 
     @Override
