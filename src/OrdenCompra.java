@@ -7,6 +7,7 @@ public class OrdenCompra{
     private DetalleOrden orden;
     private ArrayList<DetalleOrden> m;
     private DocTributario doc;
+    private float montoTotalAPagar;
 
     public OrdenCompra(DetalleOrden orden,Date fecha, Cliente cliente1, Direccion direccion1){
         m=new ArrayList<>();
