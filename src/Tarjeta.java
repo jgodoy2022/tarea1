@@ -7,7 +7,4 @@ class Tarjeta extends Pago{
         super(compra);
     }
 
-    public Date plazo(){
-
-    }
 }

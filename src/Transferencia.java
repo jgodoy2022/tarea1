@@ -7,9 +7,5 @@ class Transferencia extends Pago{
         super(compra);
     }
 
-    public Date plazo(){
-
-    }
-
 
 }
