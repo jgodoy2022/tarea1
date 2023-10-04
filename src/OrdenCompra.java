@@ -7,11 +7,10 @@ public class OrdenCompra{
     private DetalleOrden orden;
     private ArrayList<DetalleOrden> m;
     private DocTributario doc;
-    private Cliente cliente1;
-    private Direccion direccion1;
 
-    public OrdenCompra(DetalleOrden orden,String estado,Date fecha){
+    public OrdenCompra(DetalleOrden orden,String estado,Date fecha, Cliente cliente1, Direccion direccion1){
         m=new ArrayList<>();
+        doc = new DocTributario(direccion1, cliente1, fecha);
         this.fecha=fecha;
         this.estado=estado;
         this.orden=orden;
