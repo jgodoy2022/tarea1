@@ -3,11 +3,9 @@ public class Cliente {
     private String rut;
     private Direccion direccion;
 
-    public void setNombre(String nombre){
+    public Cliente(String nombre,String rut){
         this.nombre = nombre;
-    }
-    public void setRut(String rut){
-        this.rut = rut;
+        this.rut=rut;
     }
     public String getNombre(){
         return this.nombre;
