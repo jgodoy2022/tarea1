@@ -30,9 +30,6 @@ public class OrdenCompra{
     public float calcPeso(){
         return orden.calcPeso();
     }
-    public String getNombre(){
-        return 
-    }
 
     @Override
     public String toString() {
