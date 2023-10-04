@@ -7,4 +7,7 @@ class Tarjeta extends Pago{
         super(compra);
     }
 
+    public String toString(){
+        return "Tarjeta: [tipo de tarjeta: "+tipo+", numero de transaccion: "+numTransaccion+"]";
+    }
 }

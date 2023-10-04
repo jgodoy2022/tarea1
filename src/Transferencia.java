@@ -7,5 +7,8 @@ class Transferencia extends Pago{
         super(compra);
     }
 
+    public String toString(){
+        return "Transferencia: [Banco: "+banco+", numero de cuenta: "+numCuenta+"]";
+    }
 
 }

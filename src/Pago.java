@@ -8,8 +8,6 @@ public class Pago {
         this.monto=compra.calcPrecio();
     }
 
-    public Date plazo(){
 
-    }
 
 }

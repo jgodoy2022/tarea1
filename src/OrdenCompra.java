@@ -8,11 +8,10 @@ public class OrdenCompra{
     private ArrayList<DetalleOrden> m;
     private DocTributario doc;
 
-    public OrdenCompra(DetalleOrden orden,String estado,Date fecha, Cliente cliente1, Direccion direccion1){
+    public OrdenCompra(DetalleOrden orden,Date fecha, Cliente cliente1, Direccion direccion1){
         m=new ArrayList<>();
         doc = new DocTributario(direccion1, cliente1, fecha);
         this.fecha=fecha;
-        this.estado=estado;
         this.orden=orden;
     }
     public void addOrden(DetalleOrden orden){
@@ -29,6 +28,10 @@ public class OrdenCompra{
     }
     public float calcPeso(){
         return orden.calcPeso();
+    }
+
+    public String setEstado(String tipoEstado){
+        return this.estado = tipoEstado;
     }
 
     @Override
