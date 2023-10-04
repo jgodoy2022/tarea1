@@ -1,3 +1,4 @@
+import java.util.Date;
 class Transferencia extends Pago{
     private String banco;
     private String numCuenta;
@@ -5,4 +6,10 @@ class Transferencia extends Pago{
     public Transferencia(OrdenCompra compra) {
         super(compra);
     }
+
+    public Date plazo(){
+
+    }
+
+
 }
