@@ -1,15 +1,21 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class OrdenCompra{
     private final Date fecha;
     private String estado;
     private DetalleOrden orden;
+    private ArrayList<DetalleOrden> m;
     private DocTributario doc;
 
     public OrdenCompra(DetalleOrden orden,String estado,Date fecha){
+        m=new ArrayList<>();
         this.fecha=fecha;
         this.estado=estado;
         this.orden=orden;
+    }
+    public void addOrden(DetalleOrden orden){
+        m.add(orden);
     }
     public float PrecioSinIVA(){
         return orden.calcPrecioSinIVA();
