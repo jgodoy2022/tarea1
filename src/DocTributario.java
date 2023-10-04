@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public class DocTributario {
-    private final String direccion;
-    private final String rut;
+    protected final String direccion;
+    protected final String rut;
     private final Date fecha;
     public DocTributario(Direccion direccion, Cliente cliente, Date fecha) {
         this.direccion = direccion.getDireccion();

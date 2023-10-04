@@ -1,6 +1,6 @@
 import java.util.Date;
 
-abstract public class Pago {
+public class Pago {
     protected float monto;
     protected Date fecha;
 
@@ -8,6 +8,8 @@ abstract public class Pago {
         this.monto=compra.calcPrecio();
     }
 
-    public abstract Date plazo();
+    public Date plazo(){
+
+    }
 
 }

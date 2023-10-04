@@ -8,7 +8,5 @@ class Efectivo extends  Pago{
         return monto - pagar;
     }
 
-    public Date plazo(){
 
-    }
 }
