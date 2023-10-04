@@ -7,6 +7,8 @@ public class Main {
         Articulo Queso = new Articulo(500,"Queso","Gauda",2000);
         Cliente cliente1=new Cliente("Aleman tostao","21332211-2");
         Cliente cliente2=new Cliente("Adam Sandler","21309966-3");
+        DetalleOrden detalle1=new DetalleOrden(Bebida,4);
+        OrdenCompra orden1=new OrdenCompra(detalle1,)
     }
 }
 
