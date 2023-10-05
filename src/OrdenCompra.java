@@ -54,6 +54,7 @@ public class OrdenCompra{
 
     @Override
     public String toString() {
-        return null;
+        return "OrdenCompra: [Cantidad de artículos: "+cantidad+", peso total: "+calcPeso()+", precio sin IVA: "
+                +PrecioSinIVA()+",precio con IVA: "+calcIVA()+"y el precio total: "+calcPrecio()+"]";
     }
 }
