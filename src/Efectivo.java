@@ -16,16 +16,16 @@ class Efectivo extends Pago{
     }
     public void realizarPagos(){
         if(cuentaDePagos <= monto){
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
-                    "Usted todavía debe"+calcDevolucion()+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".\n"+
+                    "Usted todavía debe: "+calcDevolucion()+".");
         }
         else if(cuentaDePagos == monto){
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
-                    "Usted todavía debe"+calcDevolucion()+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".\n"+
+                    "Usted todavía debe: "+calcDevolucion()+".");
         }
         else{
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
-                    "Nosotros le debemos:"+calcDevolucion()+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".\n"+
+                    "Nosotros le debemos: "+calcDevolucion()+".");
         }
     }
     public void realizarPagosPorPlazo(float montoAPagar){
