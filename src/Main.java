@@ -28,13 +28,8 @@ public class Main {
         ordencompra3.addOrden(new DetalleOrden(producto3, 3));
         ordencompra3.addOrden(new DetalleOrden(producto5, 2));
 
-        System.out.println("Orden de Compra 1:");
-        System.out.println(ordencompra1);
-
-        System.out.println("\nOrden de Compra 2:");
-        System.out.println(ordencompra2);
-
-        System.out.println("\nOrden de Compra 3:");
-        System.out.println(ordencompra3);
+        Pago pago1=new Efectivo(ordencompra1);
+        pago1.realizarPagosPorPlazo(15000);
+        pago1.realizarPagos();
     }
 }

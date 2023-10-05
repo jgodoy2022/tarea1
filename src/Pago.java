@@ -10,9 +10,6 @@ abstract public class Pago {
         this.monto=compra.getMontoTotalAPagar();
         cuentaDePagos = 0;
     }
-   /* public float getMonto(){
-        return monto;
-    }*/
 
     public abstract void realizarPagos();
     public abstract void realizarPagosPorPlazo(float montoAPagar);
