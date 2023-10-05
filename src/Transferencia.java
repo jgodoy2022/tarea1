@@ -8,8 +8,20 @@ class Transferencia extends Pago{
         super(compra);
     }
 
-    public void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago){
-
+    public void realizarPagos(){
+        if(cuentaDePagos < monto){
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+        else if(cuentaDePagos == monto){
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+        else{
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+    }
+    public void realizarPagosPorPlazo(float montoAPagar){
+        monto -= montoAPagar;
+        cuentaDePagos += montoAPagar;
     }
 
     public String toString(){

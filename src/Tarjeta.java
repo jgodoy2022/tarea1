@@ -8,23 +8,23 @@ class Tarjeta extends Pago{
         super(compra);
     }
 
-    @Override
-    public void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago) {
-
+    public void realizarPagos(){
+        if(cuentaDePagos < monto){
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+        else if(cuentaDePagos == monto){
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+        else{
+            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+        }
+    }
+    public void realizarPagosPorPlazo(float montoAPagar){
+        monto -= montoAPagar;
+        cuentaDePagos += montoAPagar;
     }
 
     public String toString(){
         return "Tarjeta: [tipo de tarjeta: "+tipo+", numero de transaccion: "+numTransaccion+"]";
     }
-    /*public void realizarPago(float montoAPagar, Date fechaDePago){
-        float total = getMonto();
-        if(montoAPagar < total){
-            cuentaDePagos.add(montoAPagar);
-
-        }
-        else if(montoAPagar == monto){
-            return 0;
-        }
-
-    }*/
 }

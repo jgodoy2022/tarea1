@@ -4,17 +4,18 @@ import java.util.Date;
 abstract public class Pago {
     protected float monto;
     protected Date fecha;
-    protected ArrayList cuentaDePagos;
+    protected float cuentaDePagos;
 
     public Pago(OrdenCompra compra){
-        cuentaDePagos = new ArrayList<>();
         this.monto=compra.getMontoTotalAPagar();
+        cuentaDePagos = 0;
     }
-    public float getMonto(){
+   /* public float getMonto(){
         return monto;
-    }
+    }*/
 
-    public abstract void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago);
+    public abstract void realizarPagos();
+    public abstract void realizarPagosPorPlazo(float montoAPagar);
 
 
 
