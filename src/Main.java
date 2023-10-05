@@ -35,5 +35,17 @@ public class Main {
         Pago pago1=new Efectivo(ordencompra1,fecha1);
         pago1.realizarPagosPorPlazo(15000);
         pago1.realizarPagos();
+
+        Pago pago2=new Transferencia(ordencompra1,fecha1);
+        pago2.realizarPagosPorPlazo(10000);
+        pago2.realizarPagos();
+
+        Pago pago3=new Tarjeta(ordencompra1,fecha1);
+        pago3.realizarPagosPorPlazo(10000);
+        pago3.realizarPagos();
+
+        Pago pago4=new Efectivo(ordencompra1,fecha1);
+        pago4.realizarPagosPorPlazo(80000);
+        pago4.realizarPagos();
     }
 }
