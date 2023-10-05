@@ -6,7 +6,6 @@ public class OrdenCompra{
     private String estado;
     private ArrayList<DetalleOrden> detallitos;
     private DocTributario doc;
-    //private float montoTotalAPagar;
 
     public OrdenCompra(Date fecha, Cliente cliente1, Direccion direccion1){
         detallitos=new ArrayList<>();
@@ -54,7 +53,7 @@ public class OrdenCompra{
 
     @Override
     public String toString() {
-        return "OrdenCompra: [Cantidad de artículos: "+cantidad+", peso total: "+calcPeso()+", precio sin IVA: "
+        return "OrdenCompra: [Cantidad de Ordenes de Artículos: "+detallitos.size()+", peso total: "+calcPeso()+", precio sin IVA: "
                 +PrecioSinIVA()+",precio con IVA: "+calcIVA()+"y el precio total: "+calcPrecio()+"]";
     }
 }
