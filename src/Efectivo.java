@@ -15,13 +15,13 @@ class Efectivo extends Pago{
         }
     }
     public void realizarPagos(){
-        if(cuentaDePagos < monto){
+        if(cuentaDePagos <= monto){
             System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
-                    "Usted todavía debe"+calcDevolucion());
+                    "Usted todavía debe"+calcDevolucion()+".");
         }
         else if(cuentaDePagos == monto){
             System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
-                    "Usted todavía debe"+calcDevolucion());
+                    "Usted todavía debe"+calcDevolucion()+".");
         }
         else{
             System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".\n"+
