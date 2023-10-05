@@ -17,14 +17,18 @@ public class Main {
         Direccion direccion2=new Direccion();
         direccion2.setDireccion("benjamin");
 
-        OrdenCompra ordencompra1=new OrdenCompra(new Date(),cliente1,direccion1);
+        Date fecha1 = new Date(123, 9, 5);
+        Date fecha2 = new Date(123,9,6);
+        Date fecha3 = new Date(123,10,10);
+
+        OrdenCompra ordencompra1=new OrdenCompra(fecha1,cliente1,direccion1);
         ordencompra1.addOrden(new DetalleOrden(producto2,2));
 
-        OrdenCompra ordencompra2 = new OrdenCompra(new Date(), cliente2, direccion2);
+        OrdenCompra ordencompra2 = new OrdenCompra(fecha2, cliente2, direccion2);
         ordencompra2.addOrden(new DetalleOrden(Caracoquesos, 1));
         ordencompra2.addOrden(new DetalleOrden(producto5, 4));
 
-        OrdenCompra ordencompra3 = new OrdenCompra(new Date(), cliente1, direccion1);
+        OrdenCompra ordencompra3 = new OrdenCompra(fecha3, cliente1, direccion1);
         ordencompra3.addOrden(new DetalleOrden(producto3, 3));
         ordencompra3.addOrden(new DetalleOrden(producto5, 2));
 

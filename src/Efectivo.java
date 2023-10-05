@@ -5,10 +5,10 @@ class Efectivo extends Pago{
     }
     public float calcDevolucion(){
         if(monto > cuentaDePagos){
-            return monto - cuentaDePagos;
+            return Math.abs(monto);
         }
         else if(monto < cuentaDePagos){
-            return cuentaDePagos - monto;
+            return Math.abs(monto);
         }
         else{
             return 0;
