@@ -4,38 +4,52 @@ import java.util.Date;
 public class OrdenCompra{
     private final Date fecha;
     private String estado;
-    private DetalleOrden orden;
-    private ArrayList<DetalleOrden> m;
+    private ArrayList<DetalleOrden> detallitos;
     private DocTributario doc;
     //private float montoTotalAPagar;
 
-    public OrdenCompra(DetalleOrden orden,Date fecha, Cliente cliente1, Direccion direccion1){
-        m=new ArrayList<>();
+    public OrdenCompra(Date fecha, Cliente cliente1, Direccion direccion1){
+        detallitos=new ArrayList<>();
         doc = new DocTributario(direccion1, cliente1, fecha);
         this.fecha=fecha;
-        this.orden=orden;
     }
-    public void addOrden(DetalleOrden orden){
-        m.add(orden);
+    public void addOrden(DetalleOrden detalle){
+        detallitos.add(detalle);
     }
     public float PrecioSinIVA(){
-        return orden.calcPrecioSinIVA();
+        float precioSinIVA = 0.0f;
+        for (DetalleOrden detalle : detallitos) {
+            precioSinIVA += detalle.calcPrecioSinIVA();
+        }
+        return precioSinIVA;
     }
     public float calcIVA(){
-        return orden.calcIVA();
+        float iva = 0.0f;
+        for (DetalleOrden detalle : detallitos) {
+            iva += detalle.calcIVA();
+        }
+        return iva;
     }
     public float calcPrecio(){
-        return orden.calcPrecio();
+        float precioTotal = 0.0f;
+        for (DetalleOrden detalle : detallitos) {
+            precioTotal += detalle.calcPrecio();
+        }
+        return precioTotal;
     }
     public float calcPeso(){
-        return orden.calcPeso();
+        float pesoTotal = 0.0f;
+        for (DetalleOrden detalle : detallitos) {
+            pesoTotal += detalle.calcPeso();
+        }
+        return pesoTotal;
     }
 
     public String setEstado(String tipoEstado){
         return this.estado = tipoEstado;
     }
     public float getMontoTotalAPagar(){
-        return ;
+        return calcPrecio();
     }
 
     @Override
