@@ -1,7 +1,7 @@
 import java.util.Date;
 class Efectivo extends Pago{
-    public Efectivo(OrdenCompra compra) {
-        super(compra);
+    public Efectivo(OrdenCompra compra,Date fecha) {
+        super(compra,fecha);
     }
     public float calcDevolucion(){
         if(monto > cuentaDePagos){

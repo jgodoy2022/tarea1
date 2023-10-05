@@ -4,8 +4,8 @@ class Transferencia extends Pago{
     private String banco;
     private String numCuenta;
 
-    public Transferencia(OrdenCompra compra) {
-        super(compra);
+    public Transferencia(OrdenCompra compra,Date fecha) {
+        super(compra,fecha);
     }
 
     public void realizarPagos(){

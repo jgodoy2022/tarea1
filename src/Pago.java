@@ -6,7 +6,8 @@ abstract public class Pago {
     protected Date fecha;
     protected float cuentaDePagos;
 
-    public Pago(OrdenCompra compra){
+    public Pago(OrdenCompra compra,Date fecha){
+        this.fecha=fecha;
         this.monto=compra.getMontoTotalAPagar();
         cuentaDePagos = 0;
     }

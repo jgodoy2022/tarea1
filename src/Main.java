@@ -32,7 +32,7 @@ public class Main {
         ordencompra3.addOrden(new DetalleOrden(producto3, 3));
         ordencompra3.addOrden(new DetalleOrden(producto5, 2));
 
-        Pago pago1=new Efectivo(ordencompra1);
+        Pago pago1=new Efectivo(ordencompra1,fecha1);
         pago1.realizarPagosPorPlazo(15000);
         pago1.realizarPagos();
     }
