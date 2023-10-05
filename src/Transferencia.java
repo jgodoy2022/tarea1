@@ -8,8 +8,7 @@ class Transferencia extends Pago{
         super(compra);
     }
 
-    @Override
-    public void realizarPago(float montoAPagar, Date fechaDePago) {
+    public void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago){
 
     }
 

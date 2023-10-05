@@ -8,7 +8,7 @@ abstract public class Pago {
 
     public Pago(OrdenCompra compra){
         cuentaDePagos = new ArrayList<>();
-        this.monto=compra.calcPrecio();
+        this.monto=compra.getMontoTotalAPagar();
     }
     public float getMonto(){
         return monto;

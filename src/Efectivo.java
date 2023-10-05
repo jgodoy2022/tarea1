@@ -7,6 +7,8 @@ class Efectivo extends Pago{
     public float calcDevolucion(){
         return monto - pagar;
     }
-
+    public void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago){
+        float
+    }
 
 }

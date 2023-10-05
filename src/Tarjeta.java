@@ -8,10 +8,15 @@ class Tarjeta extends Pago{
         super(compra);
     }
 
+    @Override
+    public void realizarPago(float montoAPagar, int numeroDeCuotas, Date fechaDePago) {
+
+    }
+
     public String toString(){
         return "Tarjeta: [tipo de tarjeta: "+tipo+", numero de transaccion: "+numTransaccion+"]";
     }
-    public void realizarPago(float montoAPagar, Date fechaDePago){
+    /*public void realizarPago(float montoAPagar, Date fechaDePago){
         float total = getMonto();
         if(montoAPagar < total){
             cuentaDePagos.add(montoAPagar);
@@ -21,5 +26,5 @@ class Tarjeta extends Pago{
             return 0;
         }
 
-    }
+    }*/
 }
