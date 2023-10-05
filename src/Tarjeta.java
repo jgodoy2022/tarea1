@@ -10,13 +10,13 @@ class Tarjeta extends Pago{
 
     public void realizarPagos(){
         if(cuentaDePagos < monto){
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".");
         }
         else if(cuentaDePagos == monto){
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".");
         }
         else{
-            System.out.println("Usted ha realizado el pago de:"+cuentaDePagos+", para el día:"+fecha+".");
+            System.out.println("Usted ha realizado el pago de: "+cuentaDePagos+" , para el día:"+fecha+".");
         }
     }
     public void realizarPagosPorPlazo(float montoAPagar){

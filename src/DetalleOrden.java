@@ -6,10 +6,10 @@ public class DetalleOrden {
         this.articulo=articulo;
     }
     public float calcPrecio(){
-        return calcIVA()+calcPrecioSinIVA();
+        return cantidad*articulo.getPrecio();
     }
     public float calcPrecioSinIVA(){
-        return cantidad*articulo.getPrecio();
+        return cantidad*articulo.getPrecio()*(0.89f);
     }
     public float calcIVA(){
         return calcPrecioSinIVA()*(0.19f);

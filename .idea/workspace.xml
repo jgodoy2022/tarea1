@@ -7,6 +7,12 @@
     <list default="true" id="45c9e19e-d67e-45cd-a377-7b8e0a223915" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/DetalleOrden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DetalleOrden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Efectivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Efectivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transferencia.java" afterDir="false" />
+>>>>>>> 95cfaca45e814954e50107c229b9c34db64c0b31
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -55,5 +62,8 @@
       <updated>1695826626091</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
