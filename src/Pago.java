@@ -14,6 +14,7 @@ abstract public class Pago {
         cuentaDePagos = 0;
     }
 
+   
     public abstract void realizarPagos();
     public abstract void realizarPagosPorPlazo(float montoAPagar);
 
