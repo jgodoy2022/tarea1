@@ -45,7 +45,7 @@ public class OrdenCompra{
     }
 
     public String setEstado(String tipoEstado){
-        return this.estado = tipoEstado;
+        return estado = tipoEstado;
     }
     public float getMontoTotalAPagar(){
         return calcPrecio();

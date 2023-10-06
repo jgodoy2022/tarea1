@@ -1,3 +1,4 @@
+import javax.print.Doc;
 import java.util.Date;
 
 public class Main {
@@ -21,6 +22,11 @@ public class Main {
         Date fecha2 = new Date(123,9,6);
         Date fecha3 = new Date(123,10,10);
 
+        DocTributario boleta1 = new Boleta(direccion1,cliente1,fecha1);
+        DocTributario factura1 = new Factura(direccion2,cliente2,fecha2);
+        DocTributario boleta2 = new Boleta(direccion2,cliente2,fecha3);
+        DocTributario factura2 = new Factura(direccion1,cliente1,fecha1);
+
         OrdenCompra ordencompra1=new OrdenCompra(fecha1,cliente1,direccion1);
         ordencompra1.addOrden(new DetalleOrden(producto2,2));
 
@@ -35,20 +41,26 @@ public class Main {
         Pago pago1=new Efectivo(ordencompra1,fecha1);
         pago1.realizarPagosPorPlazo(15000);
         pago1.realizarPagos();
+        System.out.println(boleta1.toString());
+
 
         Pago pago2=new Transferencia(ordencompra1,fecha2,"bancoshile","1234123514");
         pago2.realizarPagosPorPlazo(10000);
         pago2.realizarPagos();
+        System.out.println(factura1.toString());
 
         Pago pago3=new Tarjeta(ordencompra1,fecha3,"Debito","12412341325123");
         pago3.realizarPagosPorPlazo(10000);
         pago3.realizarPagos();
+        System.out.println(boleta2.toString());
 
         Pago pago4=new Efectivo(ordencompra1,fecha1);
         pago4.realizarPagosPorPlazo(80000);
         pago4.realizarPagos();
+        System.out.println(factura2.toString());
 
         pago1.realizarPagosPorPlazo(15000);
         pago1.realizarPagos();
+        System.out.println(boleta1.toString());
     }
 }
