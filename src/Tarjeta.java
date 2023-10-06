@@ -4,8 +4,10 @@ import java.util.ArrayList;
 class Tarjeta extends Pago{
     private String tipo;
     private String numTransaccion;
-    public Tarjeta(OrdenCompra compra,Date fecha) {
+    public Tarjeta(OrdenCompra compra,Date fecha,String tipo,String numTransaccion){
         super(compra,fecha);
+        this.numTransaccion=numTransaccion;
+        this.tipo=tipo;
     }
 
     public void realizarPagos(){

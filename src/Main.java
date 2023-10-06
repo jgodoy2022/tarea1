@@ -36,11 +36,11 @@ public class Main {
         pago1.realizarPagosPorPlazo(15000);
         pago1.realizarPagos();
 
-        Pago pago2=new Transferencia(ordencompra1,fecha1);
+        Pago pago2=new Transferencia(ordencompra1,fecha1,"bancoshile","1234123514");
         pago2.realizarPagosPorPlazo(10000);
         pago2.realizarPagos();
 
-        Pago pago3=new Tarjeta(ordencompra1,fecha1);
+        Pago pago3=new Tarjeta(ordencompra1,fecha1,"Debito","12412341325123");
         pago3.realizarPagosPorPlazo(10000);
         pago3.realizarPagos();
 
