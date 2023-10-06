@@ -1,2 +1,2 @@
-Gabriela Isidora Zambrano Novoa
+Gabriela Isidora Zambrano Novoa // 
 Joaquín Alejandro Godoy Vergara
